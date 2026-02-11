@@ -1,0 +1,3 @@
+[submodule "app/starbucks"]
+	path = app/starbucks
+	url = https://github.com/sohailshaikh20/starbucks-microservices-kubernetes.git

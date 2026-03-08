@@ -12,59 +12,81 @@ jobs:
 
     steps:
 
+      # Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # Setup Python
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.10"
 
+      # Install dependencies
       - name: Install Python dependencies
         run: |
           pip install semgrep checkov scikit-learn pandas matplotlib
 
-      - name: Install Trivy
+      # Create findings directory
+      - name: Create findings folder
+        run: mkdir -p findings
+
+      # Run Semgrep (SAST)
+      - name: Run Semgrep
+        run: |
+          semgrep --config=auto app/starbucks --json > findings/semgrep.json
+
+      # Run Trivy (Dependency + container scan)
+      - name: Run Trivy
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'fs'
           scan-ref: 'app/starbucks'
           format: 'json'
           output: 'findings/trivy.json'
-          
-      - name: Create findings folder
-        run: mkdir -p findings
 
-      - name: Run Semgrep
-        run: |
-          semgrep --config=auto app/starbucks --json > findings/semgrep.json
-
-      - name: Run Trivy
-        run: |
-          trivy fs --format json --output findings/trivy.json app/starbucks
-
+      # Run Checkov on application infrastructure
       - name: Run Checkov App Scan
         run: |
-          checkov -d app/starbucks --output json > findings/checkov.json
+          checkov -d app/starbucks --output json > findings/checkov.json || true
 
+      # Run Checkov on Terraform infrastructure
       - name: Run Terraform Scan
         run: |
-          checkov -d terraform --output json > findings/terraform_checkov.json
+          checkov -d terraform --output json > findings/terraform_checkov.json || true
 
+      # Normalize scan results
       - name: Normalize findings
         run: python risk_engine/normalize.py
 
+      # Correlate duplicate vulnerabilities
       - name: Correlate findings
         run: python risk_engine/correlate.py
 
+      # Compute explainable risk scores
       - name: Score risks
         run: python risk_engine/score.py
 
+      # Run machine learning model
       - name: Run ML model
         run: python risk_engine/ml_model.py
 
+      # Generate visualization graphs
       - name: Generate graphs
         run: python risk_engine/visualize.py
 
+      # Apply security gate
       - name: Security Gate
         run: python risk_engine/gate.py
+
+      # Upload reports and graphs as artifacts
+      - name: Upload Security Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: security-reports
+          path: |
+            findings/risk_report.json
+            findings/risk_report.md
+            findings/risk_distribution.png
+            findings/top_risky_assets.png
+            findings/tool_contribution.png

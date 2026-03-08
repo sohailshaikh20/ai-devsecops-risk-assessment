@@ -20,11 +20,17 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
-          pip install semgrep trivy checkov
-          pip install scikit-learn pandas matplotlib
+          pip install semgrep checkov scikit-learn pandas matplotlib
 
+      - name: Install Trivy
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget
+          wget https://github.com/aquasecurity/trivy/releases/latest/download/trivy_0.50.1_Linux-64bit.deb
+          sudo dpkg -i trivy_0.50.1_Linux-64bit.deb
+          
       - name: Create findings folder
         run: mkdir -p findings
 

@@ -1,127 +1,121 @@
 # DevSecOps Risk Assessment Report
 
-Generated: 2026-03-08T12:08:47.392713+00:00
+Generated: 2026-03-08T15:33:18.722007+00:00
 
-Total findings: **100**
+Total findings: **11**
 
 ## Top 10 Highest Risk Findings
 
-1. **trivy** | score=0.6925 | id=CVE-2023-45133 | asset=package-lock.json
-   - type: CVE
-   - stage: SCA
-   - evidence: babel: arbitrary code execution
+1. **checkov** | score=0.4455 | id=CKV_K8S_21 | asset=/main.tf
+   - type: The default namespace should not be used
+   - stage: IaC
+   - evidence: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20
    - contributions:
-       severity: 0.36
+       severity: 0.08
        exposure: 0.06
        criticality: 0.045
-       confidence: 0.1275
+       confidence: 0.12
        freshness: 0.1
 
-2. **trivy** | score=0.6925 | id=CVE-2025-7783 | asset=package-lock.json
-   - type: CVE
-   - stage: SCA
-   - evidence: form-data: Unsafe random function in form-data
+2. **checkov** | score=0.4015 | id=CKV_K8S_43 | asset=/main.tf
+   - type: Image should use digest
+   - stage: IaC
+   - evidence: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-39
    - contributions:
-       severity: 0.36
+       severity: 0.04
        exposure: 0.06
        criticality: 0.045
-       confidence: 0.1275
+       confidence: 0.12
        freshness: 0.1
 
-3. **trivy** | score=0.6925 | id=CVE-2026-27212 | asset=package-lock.json
-   - type: CVE
-   - stage: SCA
-   - evidence: Prototype pollution in swiper
+3. **checkov** | score=0.4015 | id=CKV_K8S_22 | asset=/main.tf
+   - type: Use read-only filesystem for containers where possible
+   - stage: IaC
+   - evidence: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-21
    - contributions:
-       severity: 0.36
+       severity: 0.04
        exposure: 0.06
        criticality: 0.045
-       confidence: 0.1275
+       confidence: 0.12
        freshness: 0.1
 
-4. **trivy** | score=0.6525 | id=CVE-2026-26996 | asset=package-lock.json
-   - type: CVE
-   - stage: SCA
-   - evidence: minimatch: minimatch: Denial of Service via specially crafted glob patterns
+4. **checkov** | score=0.4015 | id=CKV_K8S_28 | asset=/main.tf
+   - type: Minimize the admission of containers with the NET_RAW capability
+   - stage: IaC
+   - evidence: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-27
    - contributions:
-       severity: 0.32
+       severity: 0.04
        exposure: 0.06
        criticality: 0.045
-       confidence: 0.1275
+       confidence: 0.12
        freshness: 0.1
 
-5. **trivy** | score=0.6525 | id=CVE-2026-27903 | asset=package-lock.json
-   - type: CVE
-   - stage: SCA
-   - evidence: minimatch: minimatch: Denial of Service due to unbounded recursive backtracking via crafted glob patterns
+5. **checkov** | score=0.4015 | id=CKV_K8S_14 | asset=/main.tf
+   - type: Image Tag should be fixed - not latest or blank
+   - stage: IaC
+   - evidence: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-13
    - contributions:
-       severity: 0.32
+       severity: 0.04
        exposure: 0.06
        criticality: 0.045
-       confidence: 0.1275
+       confidence: 0.12
        freshness: 0.1
 
-6. **trivy** | score=0.6525 | id=CVE-2026-27904 | asset=package-lock.json
-   - type: CVE
-   - stage: SCA
-   - evidence: minimatch: Minimatch: Denial of Service via catastrophic backtracking in glob expressions
+6. **checkov** | score=0.4015 | id=CKV_K8S_9 | asset=/main.tf
+   - type: Readiness Probe Should be Configured
+   - stage: IaC
+   - evidence: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-8
    - contributions:
-       severity: 0.32
+       severity: 0.04
        exposure: 0.06
        criticality: 0.045
-       confidence: 0.1275
+       confidence: 0.12
        freshness: 0.1
 
-7. **trivy** | score=0.6525 | id=CVE-2022-25883 | asset=package-lock.json
-   - type: CVE
-   - stage: SCA
-   - evidence: nodejs-semver: Regular expression denial of service
+7. **checkov** | score=0.4015 | id=CKV_K8S_12 | asset=/main.tf
+   - type: Memory Limits should be set
+   - stage: IaC
+   - evidence: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-11
    - contributions:
-       severity: 0.32
+       severity: 0.04
        exposure: 0.06
        criticality: 0.045
-       confidence: 0.1275
+       confidence: 0.12
        freshness: 0.1
 
-8. **trivy** | score=0.6525 | id=GHSA-5c6j-r48x-rmvq | asset=package-lock.json
-   - type: CVE
-   - stage: SCA
-   - evidence: Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()
+8. **checkov** | score=0.4015 | id=CKV_K8S_13 | asset=/main.tf
+   - type: Memory requests should be set
+   - stage: IaC
+   - evidence: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-12
    - contributions:
-       severity: 0.32
+       severity: 0.04
        exposure: 0.06
        criticality: 0.045
-       confidence: 0.1275
+       confidence: 0.12
        freshness: 0.1
 
-9. **trivy** | score=0.6525 | id=CVE-2024-37890 | asset=package-lock.json
-   - type: CVE
-   - stage: SCA
-   - evidence: nodejs-ws: denial of service when handling a request with many HTTP headers
+9. **checkov** | score=0.4015 | id=CKV_K8S_10 | asset=/main.tf
+   - type: CPU requests should be set
+   - stage: IaC
+   - evidence: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-9
    - contributions:
-       severity: 0.32
+       severity: 0.04
        exposure: 0.06
        criticality: 0.045
-       confidence: 0.1275
+       confidence: 0.12
        freshness: 0.1
 
-10. **trivy** | score=0.6125 | id=CVE-2026-22029 | asset=package-lock.json
-   - type: CVE
-   - stage: SCA
-   - evidence: @remix-run/router: react-router: React Router vulnerable to XSS via Open Redirects
+10. **checkov** | score=0.4015 | id=CKV_K8S_11 | asset=/main.tf
+   - type: CPU Limits should be set
+   - stage: IaC
+   - evidence: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-10
    - contributions:
-       severity: 0.28
+       severity: 0.04
        exposure: 0.06
        criticality: 0.045
-       confidence: 0.1275
+       confidence: 0.12
        freshness: 0.1
 
 ## Asset Risk Summary
 
-- package-lock.json | max=0.6925 | avg=0.5627 | count=57
-- /app/starbucks/kubernetes/manifest.yml | max=0.4455 | avg=0.4037 | count=20
 - /main.tf | max=0.4455 | avg=0.4055 | count=11
-- /terraform/main.tf | max=0.4015 | avg=0.4015 | count=7
-- /Dockerfile | max=0.4015 | avg=0.4015 | count=2
-- app/starbucks/Dockerfile | max=0.315 | avg=0.315 | count=1
-- app/starbucks/kubernetes/manifest.yml | max=0.315 | avg=0.315 | count=2

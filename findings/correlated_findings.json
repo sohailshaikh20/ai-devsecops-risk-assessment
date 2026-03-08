@@ -1,0 +1,194 @@
+[
+  {
+    "tool": "checkov",
+    "stage": "IaC",
+    "asset": "/main.tf",
+    "issue_type": "Image should use digest",
+    "id": "CKV_K8S_43",
+    "severity": 1,
+    "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-39",
+    "timestamp": "2026-03-08T15:32:45.605433+00:00",
+    "metadata": {
+      "resource": "kubernetes_deployment.vulnerable_app",
+      "file_line_range": [
+        18,
+        84
+      ]
+    }
+  },
+  {
+    "tool": "checkov",
+    "stage": "IaC",
+    "asset": "/main.tf",
+    "issue_type": "Use read-only filesystem for containers where possible",
+    "id": "CKV_K8S_22",
+    "severity": 1,
+    "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-21",
+    "timestamp": "2026-03-08T15:32:45.605444+00:00",
+    "metadata": {
+      "resource": "kubernetes_deployment.vulnerable_app",
+      "file_line_range": [
+        18,
+        84
+      ]
+    }
+  },
+  {
+    "tool": "checkov",
+    "stage": "IaC",
+    "asset": "/main.tf",
+    "issue_type": "Minimize the admission of containers with the NET_RAW capability",
+    "id": "CKV_K8S_28",
+    "severity": 1,
+    "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-27",
+    "timestamp": "2026-03-08T15:32:45.605448+00:00",
+    "metadata": {
+      "resource": "kubernetes_deployment.vulnerable_app",
+      "file_line_range": [
+        18,
+        84
+      ]
+    }
+  },
+  {
+    "tool": "checkov",
+    "stage": "IaC",
+    "asset": "/main.tf",
+    "issue_type": "Image Tag should be fixed - not latest or blank",
+    "id": "CKV_K8S_14",
+    "severity": 1,
+    "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-13",
+    "timestamp": "2026-03-08T15:32:45.605450+00:00",
+    "metadata": {
+      "resource": "kubernetes_deployment.vulnerable_app",
+      "file_line_range": [
+        18,
+        84
+      ]
+    }
+  },
+  {
+    "tool": "checkov",
+    "stage": "IaC",
+    "asset": "/main.tf",
+    "issue_type": "Readiness Probe Should be Configured",
+    "id": "CKV_K8S_9",
+    "severity": 1,
+    "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-8",
+    "timestamp": "2026-03-08T15:32:45.605453+00:00",
+    "metadata": {
+      "resource": "kubernetes_deployment.vulnerable_app",
+      "file_line_range": [
+        18,
+        84
+      ]
+    }
+  },
+  {
+    "tool": "checkov",
+    "stage": "IaC",
+    "asset": "/main.tf",
+    "issue_type": "The default namespace should not be used",
+    "id": "CKV_K8S_21",
+    "severity": 2,
+    "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20",
+    "timestamp": "2026-03-08T15:32:45.605455+00:00",
+    "metadata": {
+      "resource": "kubernetes_deployment.vulnerable_app",
+      "file_line_range": [
+        18,
+        84
+      ],
+      "correlated_tools": [
+        "checkov"
+      ],
+      "correlation_count": 2,
+      "correlation_boost": true
+    }
+  },
+  {
+    "tool": "checkov",
+    "stage": "IaC",
+    "asset": "/main.tf",
+    "issue_type": "Memory Limits should be set",
+    "id": "CKV_K8S_12",
+    "severity": 1,
+    "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-11",
+    "timestamp": "2026-03-08T15:32:45.605458+00:00",
+    "metadata": {
+      "resource": "kubernetes_deployment.vulnerable_app",
+      "file_line_range": [
+        18,
+        84
+      ]
+    }
+  },
+  {
+    "tool": "checkov",
+    "stage": "IaC",
+    "asset": "/main.tf",
+    "issue_type": "Memory requests should be set",
+    "id": "CKV_K8S_13",
+    "severity": 1,
+    "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-12",
+    "timestamp": "2026-03-08T15:32:45.605460+00:00",
+    "metadata": {
+      "resource": "kubernetes_deployment.vulnerable_app",
+      "file_line_range": [
+        18,
+        84
+      ]
+    }
+  },
+  {
+    "tool": "checkov",
+    "stage": "IaC",
+    "asset": "/main.tf",
+    "issue_type": "CPU requests should be set",
+    "id": "CKV_K8S_10",
+    "severity": 1,
+    "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-9",
+    "timestamp": "2026-03-08T15:32:45.605462+00:00",
+    "metadata": {
+      "resource": "kubernetes_deployment.vulnerable_app",
+      "file_line_range": [
+        18,
+        84
+      ]
+    }
+  },
+  {
+    "tool": "checkov",
+    "stage": "IaC",
+    "asset": "/main.tf",
+    "issue_type": "CPU Limits should be set",
+    "id": "CKV_K8S_11",
+    "severity": 1,
+    "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-10",
+    "timestamp": "2026-03-08T15:32:45.605465+00:00",
+    "metadata": {
+      "resource": "kubernetes_deployment.vulnerable_app",
+      "file_line_range": [
+        18,
+        84
+      ]
+    }
+  },
+  {
+    "tool": "checkov",
+    "stage": "IaC",
+    "asset": "/main.tf",
+    "issue_type": "Liveness Probe Should be Configured",
+    "id": "CKV_K8S_8",
+    "severity": 1,
+    "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-7",
+    "timestamp": "2026-03-08T15:32:45.605473+00:00",
+    "metadata": {
+      "resource": "kubernetes_deployment.vulnerable_app",
+      "file_line_range": [
+        18,
+        84
+      ]
+    }
+  }
+]

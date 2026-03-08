@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-08T15:33:18.720542+00:00",
+  "generated_at": "2026-03-08T15:56:38.128200+00:00",
   "total_findings": 11,
   "top_findings": [
     {
@@ -10,7 +10,7 @@
       "id": "CKV_K8S_21",
       "severity": 2,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20",
-      "timestamp": "2026-03-08T15:32:45.605455+00:00",
+      "timestamp": "2026-03-08T15:56:03.266170+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -59,7 +59,7 @@
       "id": "CKV_K8S_43",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-39",
-      "timestamp": "2026-03-08T15:32:45.605433+00:00",
+      "timestamp": "2026-03-08T15:56:03.266146+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -103,7 +103,7 @@
       "id": "CKV_K8S_22",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-21",
-      "timestamp": "2026-03-08T15:32:45.605444+00:00",
+      "timestamp": "2026-03-08T15:56:03.266158+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -147,7 +147,7 @@
       "id": "CKV_K8S_28",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-27",
-      "timestamp": "2026-03-08T15:32:45.605448+00:00",
+      "timestamp": "2026-03-08T15:56:03.266162+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -191,7 +191,7 @@
       "id": "CKV_K8S_14",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-13",
-      "timestamp": "2026-03-08T15:32:45.605450+00:00",
+      "timestamp": "2026-03-08T15:56:03.266165+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -235,7 +235,7 @@
       "id": "CKV_K8S_9",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-8",
-      "timestamp": "2026-03-08T15:32:45.605453+00:00",
+      "timestamp": "2026-03-08T15:56:03.266167+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -279,7 +279,7 @@
       "id": "CKV_K8S_12",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-11",
-      "timestamp": "2026-03-08T15:32:45.605458+00:00",
+      "timestamp": "2026-03-08T15:56:03.266172+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -323,7 +323,7 @@
       "id": "CKV_K8S_13",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-12",
-      "timestamp": "2026-03-08T15:32:45.605460+00:00",
+      "timestamp": "2026-03-08T15:56:03.266174+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -367,7 +367,7 @@
       "id": "CKV_K8S_10",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-9",
-      "timestamp": "2026-03-08T15:32:45.605462+00:00",
+      "timestamp": "2026-03-08T15:56:03.266177+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -411,7 +411,7 @@
       "id": "CKV_K8S_11",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-10",
-      "timestamp": "2026-03-08T15:32:45.605465+00:00",
+      "timestamp": "2026-03-08T15:56:03.266179+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -455,7 +455,7 @@
       "id": "CKV_K8S_8",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-7",
-      "timestamp": "2026-03-08T15:32:45.605473+00:00",
+      "timestamp": "2026-03-08T15:56:03.266187+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -509,7 +509,7 @@
       "id": "CKV_K8S_21",
       "severity": 2,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-20",
-      "timestamp": "2026-03-08T15:32:45.605455+00:00",
+      "timestamp": "2026-03-08T15:56:03.266170+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -558,7 +558,7 @@
       "id": "CKV_K8S_43",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-39",
-      "timestamp": "2026-03-08T15:32:45.605433+00:00",
+      "timestamp": "2026-03-08T15:56:03.266146+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -602,7 +602,7 @@
       "id": "CKV_K8S_22",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-21",
-      "timestamp": "2026-03-08T15:32:45.605444+00:00",
+      "timestamp": "2026-03-08T15:56:03.266158+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -646,7 +646,7 @@
       "id": "CKV_K8S_28",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-27",
-      "timestamp": "2026-03-08T15:32:45.605448+00:00",
+      "timestamp": "2026-03-08T15:56:03.266162+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -690,7 +690,7 @@
       "id": "CKV_K8S_14",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-13",
-      "timestamp": "2026-03-08T15:32:45.605450+00:00",
+      "timestamp": "2026-03-08T15:56:03.266165+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -734,7 +734,7 @@
       "id": "CKV_K8S_9",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-8",
-      "timestamp": "2026-03-08T15:32:45.605453+00:00",
+      "timestamp": "2026-03-08T15:56:03.266167+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -778,7 +778,7 @@
       "id": "CKV_K8S_12",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-11",
-      "timestamp": "2026-03-08T15:32:45.605458+00:00",
+      "timestamp": "2026-03-08T15:56:03.266172+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -822,7 +822,7 @@
       "id": "CKV_K8S_13",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-12",
-      "timestamp": "2026-03-08T15:32:45.605460+00:00",
+      "timestamp": "2026-03-08T15:56:03.266174+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -866,7 +866,7 @@
       "id": "CKV_K8S_10",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-9",
-      "timestamp": "2026-03-08T15:32:45.605462+00:00",
+      "timestamp": "2026-03-08T15:56:03.266177+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -910,7 +910,7 @@
       "id": "CKV_K8S_11",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-10",
-      "timestamp": "2026-03-08T15:32:45.605465+00:00",
+      "timestamp": "2026-03-08T15:56:03.266179+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [
@@ -954,7 +954,7 @@
       "id": "CKV_K8S_8",
       "severity": 1,
       "evidence": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/kubernetes-policies/kubernetes-policy-index/bc-k8s-7",
-      "timestamp": "2026-03-08T15:32:45.605473+00:00",
+      "timestamp": "2026-03-08T15:56:03.266187+00:00",
       "metadata": {
         "resource": "kubernetes_deployment.vulnerable_app",
         "file_line_range": [

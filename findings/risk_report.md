@@ -1,6 +1,6 @@
 # DevSecOps Risk Assessment Report
 
-Generated: 2026-03-08T15:33:18.722007+00:00
+Generated: 2026-03-08T15:56:38.129666+00:00
 
 Total findings: **11**
 

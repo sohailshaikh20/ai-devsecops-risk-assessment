@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "019cce13-d4b0-7324-9262-d32481a489da",
-  "CreatedAt": "2026-03-08T15:32:12.080206844Z",
+  "ReportID": "019cce29-2fc4-7591-8dea-e53226e8a820",
+  "CreatedAt": "2026-03-08T15:55:31.652365763Z",
   "ArtifactName": "app/starbucks",
   "ArtifactType": "filesystem"
 }

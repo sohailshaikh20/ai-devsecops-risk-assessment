@@ -2,6 +2,9 @@
 __pycache__
 *.pyc
 *.log
-findings/*.json
-findings/*.png
+# allow security outputs
+!findings/
+!findings/*.json
+!findings/*.md
+!findings/*.png
 .DS_Store

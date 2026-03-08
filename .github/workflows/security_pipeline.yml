@@ -25,11 +25,12 @@ jobs:
           pip install semgrep checkov scikit-learn pandas matplotlib
 
       - name: Install Trivy
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y wget
-          wget https://github.com/aquasecurity/trivy/releases/latest/download/trivy_0.50.1_Linux-64bit.deb
-          sudo dpkg -i trivy_0.50.1_Linux-64bit.deb
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          scan-ref: 'app/starbucks'
+          format: 'json'
+          output: 'findings/trivy.json'
           
       - name: Create findings folder
         run: mkdir -p findings

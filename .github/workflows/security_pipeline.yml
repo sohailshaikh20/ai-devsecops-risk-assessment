@@ -204,7 +204,9 @@ jobs:
           path: findings/
 
       - name: Generate visualizations
-        run: python risk_engine/visualize.py
+        run: |
+          python risk_engine/visualize.py
+          python risk_engine/trend_analysis.py
 
       - name: Upload final reports
         uses: actions/upload-artifact@v4

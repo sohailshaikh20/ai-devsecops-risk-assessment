@@ -224,20 +224,32 @@ jobs:
 
     needs: visualization
     runs-on: ubuntu-latest
-
+  
     steps:
-
+  
       - uses: actions/checkout@v3
-
+  
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.10"
-
+  
       - uses: actions/download-artifact@v4
         with:
           name: security-reports
           path: findings/
-
+  
       - name: Apply security gate
         run: python risk_engine/gate.py
+  
+      - name: Commit reports to repository
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+  
+          git add findings/*.json || true
+          git add findings/*.md || true
+          git add findings/*.png || true
+  
+          git commit -m "Update security analysis results [auto]" || true
+          git push

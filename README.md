@@ -175,12 +175,14 @@ python risk_engine/gate.py
 ---
 
 # Future Improvements
+
 Possible improvements include:
 1.Real-time security dashboards
 2.Kubernetes runtime security monitoring
 3.Integration with SIEM platforms
 4.Risk prediction using larger datasets
 5.Automated remediation recommendations
+
 ---
 Author
 MD SOHAIL SHAIKH

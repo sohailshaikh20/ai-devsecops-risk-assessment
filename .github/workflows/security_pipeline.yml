@@ -1,0 +1,63 @@
+name: DevSecOps AI Security Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  security-analysis:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          pip install semgrep trivy checkov
+          pip install scikit-learn pandas matplotlib
+
+      - name: Create findings folder
+        run: mkdir -p findings
+
+      - name: Run Semgrep
+        run: |
+          semgrep --config=auto app/starbucks --json > findings/semgrep.json
+
+      - name: Run Trivy
+        run: |
+          trivy fs --format json --output findings/trivy.json app/starbucks
+
+      - name: Run Checkov App Scan
+        run: |
+          checkov -d app/starbucks --output json > findings/checkov.json
+
+      - name: Run Terraform Scan
+        run: |
+          checkov -d terraform --output json > findings/terraform_checkov.json
+
+      - name: Normalize findings
+        run: python risk_engine/normalize.py
+
+      - name: Correlate findings
+        run: python risk_engine/correlate.py
+
+      - name: Score risks
+        run: python risk_engine/score.py
+
+      - name: Run ML model
+        run: python risk_engine/ml_model.py
+
+      - name: Generate graphs
+        run: python risk_engine/visualize.py
+
+      - name: Security Gate
+        run: python risk_engine/gate.py
